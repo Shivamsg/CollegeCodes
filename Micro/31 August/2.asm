@@ -1,0 +1,21 @@
+LDA 5001H
+
+MOV B,A
+
+LDA 5003H
+
+SUB B;S 1  C 1
+
+STA 5009H
+
+LDA 5000H
+
+MOV B,A
+
+LDA 5002H
+
+SBB B;S 0  C 0
+
+STA 5008H
+
+hlt

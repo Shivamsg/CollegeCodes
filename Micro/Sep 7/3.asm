@@ -1,0 +1,9 @@
+LDA 5000H
+MOV B,A
+
+RRC
+ANI 7FH;ac1
+
+XRA B;ac0 p1
+STA 5001H
+HLT
